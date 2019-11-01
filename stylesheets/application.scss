@@ -1,0 +1,224 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree
+ *= require_self
+ */
+
+
+body{
+  margin: 0px;
+} 
+
+.body-content{
+  margin-top: 30px;
+}
+
+a:hover{
+  text-decoration:none;
+  background-color: transparent;
+  color: black;
+}
+
+
+.color-white{
+  color: white !important;
+}
+
+.navbar{
+  height: 70px;
+  padding: 0px; 
+}
+
+.navbar .navbar-brand{
+  margin-top: 20px;
+}
+
+
+
+#select-gender, #country, #city{
+    border-radius: 4px; 
+} 
+
+.button-margin{
+  margin-bottom: 20px;
+}
+
+.transparent {
+    background:#7f7f7f;
+    background:rgba(0,0,0,0.5);
+}
+
+.userType{
+  color:white; 
+  position:absolute; 
+  top:100px; 
+  left: 60px; 
+  width: 350px; 
+  height: 100px;
+}
+.userType h3{
+  margin-top: 35px;
+}
+
+.button1UserType{
+  //background-image: url(/assets/tourist-button.jpg);
+  background-image: url(asset-path('tourist-button.jpg'));
+  background-size: 100% 100%;
+  position: fixed;
+  height: 330px;
+}
+
+a:hover .button1UserType{
+ // background-image: url(/assets/tourist-button-dark.jpg);
+  background-image: url(asset-path('tourist-button-dark.jpg'));
+  background-size: 100% 100%;
+  position: fixed;
+  height: 330px;
+}
+
+
+.button2UserType{
+  //background-image: url(/assets/business-button.jpg);
+  background-image: url(asset-path('business-button.jpg'));
+  background-size: 100% 100%;
+  position: relative;
+  height: 330px;
+  display: block;
+  max-width: 100%;
+  //height: auto;
+}
+
+a:hover .button2UserType{
+  background-image: url(asset-path('business-button-dark.jpg'));
+  position: relative;
+  height: 330px;
+  
+}
+
+
+@media (max-width:480px){
+  .userType{
+    top: 120px; 
+    left: 16px; 
+    width: 298px !important; 
+    height: 60px;
+  }
+  
+  
+  .userType h3{
+    margin-top: 20px;
+  }
+  
+  .withoutPadding{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  
+  .button1UserType{
+    background-image: url(/assets/tourist-button.jpg);
+    background-size: 100% 100%;
+    position: relative;
+    height: 230px;
+    display: block;
+    max-width: 100%;
+  }
+
+  .button2UserType{
+    background-image: url(/assets/business-button.jpg);
+    background-size: 100% 100%;
+    position: relative;
+    height: 230px;
+    display: block;
+    max-width: 100%;
+    //height: auto;
+  }
+  
+  
+  a:hover .button1UserType{
+    background-image: url(/assets/tourist-button-dark.jpg);
+    background-size: 100% 100%;
+    position: fixed;
+    height: 230px;
+    display: block;
+    max-width: 100%;
+  }
+  
+  a:hover .button2UserType{
+    background-image: url(/assets/business-button-dark.jpg);
+    position: relative;
+    height: 230px;
+    display: block;
+    max-width: 100%;
+    
+  }
+
+}
+
+@media (max-width:668px){
+  .userType{
+    top:50px; 
+    left: 0px; 
+    width: 223px; 
+    height: 60px;
+  }
+  
+  .userType h3{
+    margin-top: 20px;
+    font-size: 150%;
+  }
+  
+   .withoutPadding{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  
+  
+    .button1UserType{
+    background-image: url(/assets/tourist-button.jpg);
+    background-size: 100% 100%;
+    position: relative;
+    height: 200px;
+    display: block;
+    max-width: 100%;
+  }
+
+  .button2UserType{
+    background-image: url(/assets/business-button.jpg);
+    background-size: 100% 100%;
+    position: relative;
+    height: 200px;
+    display: block;
+    max-width: 100%;
+    //height: auto;
+  }
+  
+  
+  a:hover .button1UserType{
+    background-image: url(/assets/tourist-button-dark.jpg);
+    background-size: 100% 100%;
+    position: fixed;
+    height: 230px;
+    display: block;
+    max-width: 100%;
+  }
+  
+  a:hover .button2UserType{
+    background-image: url(/assets/business-button-dark.jpg);
+    position: relative;
+    height: 230px;
+    display: block;
+    max-width: 100%;
+    
+  }
+}
+

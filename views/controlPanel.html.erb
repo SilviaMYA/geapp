@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <title>Control panel</title>
+  </head>
+  <body>
+    <!--incluye el archivo stylesheets/application.scss para los estilos-->
+     <%= render 'layouts/head' %>
+     
+       <nav class="navbar navbar-light bg-faded">
+        <div class="navbar-brand float-xs-right">
+              <%= link_to "Nombre usuario", '' %>
+        </div>
+      </nav>
+      
+    <div class="container body-content offset-md-2 ">
+      
+      <div class="col-md-5 offset-md-0 hidden-xs-down hidden-sm-down">
+          <img src="<%= asset_path 'fall.jpg'%>" class="img-fluid img-thumbnail">
+      </div>
+          
+      <div class="col-md-6 col-xs-12">
+        <div>
+          <a href="profile"  class="btn btn-lg btn-primary col-md-6 col-xs-12 offset-md-2 button-margin  color-white" role="button"> 
+            Edit profile
+          </a>
+        </div>
+        
+       
+        <div>
+          <a href="home"  class="btn btn-lg btn-primary col-md-6 col-xs-12 offset-md-2 button-margin  color-white" role="button"> 
+            Delete account
+          </a>          
+        </div>
+        
+        
+        <div>
+          <a href="restorePassword"  class="btn btn-lg btn-primary col-md-6 col-xs-12 offset-md-2 button-margin  color-white" role="button"> 
+            Change password
+          </a>
+        </div>
+        
+        
+        <div>
+          <a href="home"  class="btn btn-lg btn-danger col-md-6 col-xs-12 offset-md-2  color-white" role="button"> 
+            Log out
+          </a> 
+       
+        </div>  
+    </div>
+  </body>
+</html>

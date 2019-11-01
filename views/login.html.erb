@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>Login</title>
+  </head>
+  <body>
+    <!--incluye el archivo stylesheets/application.scss para los estilos-->
+     <%= render 'layouts/head' %>
+     <nav class="navbar navbar-light bg-faded">
+        <div class="navbar-brand float-xs-right">
+              <%= link_to "Log in", 'userType' %>
+        </div>
+      </nav>
+    <div class="container body-content">
+    
+        <div class="col-md-6 hidden-xs-down hidden-sm-down">
+             <img src="<%= asset_path 'fall.jpg'%>" class="img-fluid img-thumbnail">
+        </div>
+        
+  
+        <div class="col-md-6 col-lg-offset-0 col-xs-12">
+          <!-- List group -->
+          <ul class="list-group">
+            <li style="background-color: #2E9AFE" class="list-group-item"><a href="userType" >Log in with Facebook</a></li>
+            <li class="list-group-item"><a href="emailLogin" >Log in with email</a></li>
+          </ul>
+        </div>
+    </div>
+  </body>
+</html>

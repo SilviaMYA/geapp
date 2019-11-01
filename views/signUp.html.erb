@@ -1,0 +1,76 @@
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <!--incluye el archivo stylesheets/application.scss para los estilos-->
+     <%= render 'layouts/head' %>
+
+     <nav class="navbar navbar-light bg-faded">
+        <div class="navbar-brand float-xs-right">
+              <%= link_to "Log in", 'login' %>
+        </div>
+      </nav>
+    <div class="container body-content offset-md-1">
+            
+        
+    <div class="col-md-5 offset-md-0 hidden-xs-down hidden-sm-down">
+            <img src="<%= asset_path 'fall.jpg'%>" class="img-fluid img-thumbnail">
+        </div>
+      <form>  
+       <div class="col-md-6 offset-md-1">
+           <h5 class="offset-xs-4 offset-sm-5 offset-md-4">Sign up</h5>
+          <form>
+            <div class="form-group row col-md-8 offset-md-1">
+              <div class="input-group">
+                <span class="input-group-addon">
+                  <i class="fa fa-envelope fa-fw"></i>
+                </span>             
+              <input type="email" class="form-control octicon-mail" id="emailSignUp" placeholder="Email">
+              </div>
+            </div> 
+            
+            <div class="form-group row col-md-8 offset-md-1">
+              <div class="input-group">
+                <span class="input-group-addon">
+                  <i class="fa fa-lock fa-fw"></i>
+                </span> 
+                <input type="password" class="form-control" id="passwordSignUp" placeholder="Password">
+              </div>
+            </div>
+            
+            <div class="form-group row col-md-8 offset-md-1">
+              <div class="input-group">
+                <span class="input-group-addon">
+                  <i class="fa fa-lock fa-fw"></i>
+                </span>
+                <input type="password" class="form-control" id="passwordRepeatSignUp" placeholder="Repeat password">
+              </div>
+            </div>
+            
+            <div class="form-group radio col-md-10 col-xs-12 offset-xs-0 offset-md-1">
+              <label class="radio"><input type="radio" name="optradio">I want to discover the city</label>
+            </div>
+            
+            <div class="form-group radio col-md-10 col-xs-12 offset-xs-0 offset-md-1">
+             <label class="radio"><input type="radio" name="optradio"> I want to advertise my business</label>
+            </div>
+            
+            <div class="form-group radio col-md-5 col-xs-12 offset-xs-0 offset-md-1">
+              <input type="checkbox"> <%= link_to "Terms and conditions", 'termsAndConditions' %>
+            </div>
+
+           <div class="form-group row offset-md-1">
+              <div class="col-sm-12 col-md-10">
+                <a href="profile" class="btn btn-success col-md-10 col-sm-12 col-xs-12 color-white" role="button"> 
+                  Sign up
+                </a>
+             </div>
+            </div>
+        </form>
+        
+        
+      </div>  
+    </div>  
+  </body>
+</html>

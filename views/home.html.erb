@@ -1,0 +1,27 @@
+<html>
+  <!DOCTYPE html>
+  <head>
+    <title>Home</title>
+  </head>
+  <body>
+    <!--incluye el archivo stylesheets/application.scss para los estilos-->
+     <%= render 'layouts/head' %>
+     <div id="wrap">
+     <div class="navbar navbar-light bg-faded">
+        <div class="navbar-brand float-xs-right">
+              <%= link_to "Log in", 'login' %>
+        </div>
+      </div>
+     
+    <div class="container">
+      
+      <div class="body-content col-md-8 offset-md-2 col-xs-12 ">
+            <!--<img alt="imagen" src="/assets/fall.jpg" />-->
+            <img src="<%= asset_path 'fall.jpg'%>" class="img-fluid img-thumbnail">
+      </div>  
+     
+    </div>  
+  <%= render 'layouts/footer' %>
+  </div>
+  </body>
+</html>
